@@ -1,0 +1,32 @@
+<h1 align="center"> Gestión de Paquetes </h1>
+
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Paquete</mat-label>
+      <input matInput placeholder="Ingrese el tracking ID del paquete">
+    </mat-form-field>
+
+    <h4>Estado del Paquete</h4>
+      <mat-form-field>
+        <mat-label>Elija un estado</mat-label>
+        <select matNativeControl required>
+          <option value= 'opcion1'>En tránsito</option>,
+          <option value= 'opcion2'>En aduanas</option>,
+          <option value= 'opcion3'>Listo para entregar</option>,
+          <option value= 'opcion4'>En ruta de entrega</option>,
+          <option value= 'opcion5'>En sucursal</option>,
+          <option value= 'opcion6'>Entregado al cliente</option>,
+          <option value= 'opcion7'>Entrega Fallida</option>
+        </select>
+      </mat-form-field>
+
+    <br>
+    <br>
+
+    <div class="example-button-row">
+        <button mat-raised-button color="primary">Ingresar</button> &nbsp; &nbsp;
+        <button mat-raised-button color="primary">Modificar</button> &nbsp; &nbsp;
+        <button mat-raised-button color="primary">Eliminar</button>
+    </div>
+
+</form>

@@ -1,24 +1,26 @@
-<h1 align="center">Gestión de Rutas</h1>
+<h1 align="center"> Gestión de Paquetes </h1>
 
 <form class="example-form">
     <mat-form-field class="example-full-width">
-      <mat-label>Nombre de la ruta</mat-label>
-      <input matInput placeholder="Ingrese el nombre de la ruta" value="">
+      <mat-label>Tracking ID</mat-label>
+      <input matInput >
     </mat-form-field>
   
     <mat-form-field class="example-full-width">
-      <mat-label>Destrito 1</mat-label>
-      <input matInput ></input>
+      <mat-label>Cliente</mat-label>
+      <input matInput placeholder="Nombre del cliente">
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
-        <mat-label>Destrito 2</mat-label>
-        <input matInput ></input>
+        <mat-label>Descripción del Producto</mat-label>
+        <input matInput >
     </mat-form-field>
 
-    <mat-form-field class="example-full-width">
-        <mat-label>Destrito 3</mat-label>
-        <input matInput ></input>
+    <mat-form-field>
+      <mat-label>Fecha de ingreso</mat-label>
+      <input matInput [matDatepicker]="picker">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
 
     <br>
