@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DeliveryApp</string>
+    <string name="Usuario">Usuario</string>
+    <string name="contraseña">contraseña</string>
+    <string name="Ingresar">Ingresar</string>
+
+</resources>
