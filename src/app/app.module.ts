@@ -14,6 +14,8 @@ import { CartItemComponent } from './components/shopping-cart/cart/cart-item/car
 import { ProductItemComponent } from './components/shopping-cart/product-list/product-item/product-item.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { PageNotFoundComponent } from './components/shared/page-not-found/page-not-found.component';
+import { TrackComponent } from './components/track/track.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { RegisterComponent } from './components/register/register.component';
     CartItemComponent,
     ProductItemComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    PageNotFoundComponent,
+    TrackComponent
   ],
   imports: [
     BrowserModule,

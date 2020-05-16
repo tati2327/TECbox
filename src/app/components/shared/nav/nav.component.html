@@ -1,19 +1,22 @@
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
   <h5 class="my-0 mr-md-auto font-weight-normal">
-<app-header></app-header>
-</h5>
-<nav class="my-2 my-md-0 mr-md-3">
+    <app-header></app-header>
+  </h5>
+  <nav class="my-2 my-md-0 mr-md-3">
 
 
-<a class="p-2 text-dark" href="#">Features</a>
-<a class="p-2 text-dark" href="#">Features</a>
-<a class="p-2 text-dark" href="#">Features</a>
-<a class="p-2 text-dark" href="#">Features</a>
+    <select class="p-2 text-dark" >
+      <option value="Cartago" [routerLink]="'/management'">Client Management</option>
+      <option value="Alajuela" [routerLink]="'/shop'">Shop</option>
+      <option value="San Jose" [routerLink]="'/track'">Track</option>
+    </select>
 
+    <a class="p-2 text-dark" href="#">Admin</a>
+    <a class="p-2 text-dark" href="#">Bodega</a>
+    <a class="p-2 text-dark" href="#">Reportes</a>
+  </nav>
 
-</nav>
-
-<a class="btn btn-outline-primary" href="#">Sign up</a>
-
+  <a class="btn btn-primary" [routerLink]="'/register'">Sign up</a>
+  <a class="btn btn-outline-secondary" [routerLink]="'/login'">Login</a>
 
 </div>
