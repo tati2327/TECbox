@@ -14,6 +14,8 @@ import { CartItemComponent } from './components/shopping-cart/cart/cart-item/car
 import { ProductItemComponent } from './components/shopping-cart/product-list/product-item/product-item.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { AdminViewComponent } from './components/admin-view/admin-view.component';
+import { BodegViewComponent } from './components/bodeg-view/bodeg-view.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { RegisterComponent } from './components/register/register.component';
     CartItemComponent,
     ProductItemComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    AdminViewComponent,
+    BodegViewComponent
   ],
   imports: [
     BrowserModule,
