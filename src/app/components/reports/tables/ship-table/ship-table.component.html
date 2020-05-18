@@ -43,10 +43,11 @@
         </tr>
      </thead>
      <tbody>
-        <tr *ngFor="let item of ItemsArray">
+        <tr *ngFor="let item of shipDataList">
            <th scope="row">{{ item.number }}</th>
-           <td>{{ item.product }}</td>
-           <td>{{ item.date }}</td>
+           <td>{{ item.pack }}</td>
+           <td>{{item.deliveryMan }}</td>
+           <td>{{item.date }}</td>
            <td>
               <button type="button" >Edit</button>
               <button type="button" >Delete</button>
