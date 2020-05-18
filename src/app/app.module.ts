@@ -22,6 +22,8 @@ import { TrabajadoresComponent } from './components/admin-view/trabajadores/trab
 import { VendedoresComponent } from './components/admin-view/vendedores/vendedores.component';
 import { ProductosComponent } from './components/admin-view/productos/productos.component';
 import { RutasComponent } from './components/admin-view/rutas/rutas.component';
+import { PaquetesComponent } from './components/bodeg-view/paquetes/paquetes.component';
+import { RastreoPaquetesComponent } from './components/bodeg-view/rastreo-paquetes/rastreo-paquetes.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { RutasComponent } from './components/admin-view/rutas/rutas.component';
     TrabajadoresComponent,
     VendedoresComponent,
     ProductosComponent,
-    RutasComponent
+    RutasComponent,
+    PaquetesComponent,
+    RastreoPaquetesComponent
   ],
   imports: [
     BrowserModule,

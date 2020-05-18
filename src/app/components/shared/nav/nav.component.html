@@ -24,7 +24,15 @@
 </nav>
 
 <nav class="my-2 my-md-0 mr-md-3">
-  <button class="p-2 text-dark" type="button" routerLink="/bodegView">Bodeguero</button>
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Bodeguero
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" routerLink="/paquetes">Gestión de Paquetes</a>
+      <a class="dropdown-item" routerLink="/rastreoPaquetes">Gestión de Rastreo de Paquetes</a>
+    </div>
+  </div>
 </nav>
 
 <nav class="my-2 my-md-0 mr-md-3">

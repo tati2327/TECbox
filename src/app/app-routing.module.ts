@@ -11,6 +11,8 @@ import { TrabajadoresComponent } from './components/admin-view/trabajadores/trab
 import { VendedoresComponent } from './components/admin-view/vendedores/vendedores.component';
 import { ProductosComponent } from './components/admin-view/productos/productos.component';
 import { RutasComponent } from './components/admin-view/rutas/rutas.component';
+import { RastreoPaquetesComponent } from './components/bodeg-view/rastreo-paquetes/rastreo-paquetes.component';
+import { PaquetesComponent } from './components/bodeg-view/paquetes/paquetes.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent},
@@ -24,6 +26,8 @@ const routes: Routes = [
   { path: 'productos', component: ProductosComponent},
   { path: 'rutas', component: RutasComponent},
   { path: 'bodegView', component: BodegViewComponent},
+  { path: 'paquetes', component: PaquetesComponent},
+  { path: 'rastreoPaquetes', component: RastreoPaquetesComponent},
 ];
 
 @NgModule({
