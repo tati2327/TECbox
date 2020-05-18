@@ -2,18 +2,36 @@
   <h5 class="my-0 mr-md-auto font-weight-normal">
 <app-header></app-header>
 </h5>
+
 <nav class="my-2 my-md-0 mr-md-3">
-
-
-<a class="p-2 text-dark" href="#">Cliente</a>
-<a class="p-2 text-dark" routerLink="/administracion">Administración</a>
-<a class="p-2 text-dark" href="#">Bodeguero</a>
-<a class="p-2 text-dark" href="#">Reportes</a>
-
-
+  <button class="p-2 text-dark" type="button" routerLink="/shoppingCart">Cliente</button>
 </nav>
 
-<a class="btn btn-outline-primary" href="#">Sign up</a>
+<nav class="my-2 my-md-0 mr-md-3">
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Administración
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" routerLink="/roles">Gestión de Roles</a>
+      <a class="dropdown-item" routerLink="/sucursales">Gestión de Sucursales</a>
+      <a class="dropdown-item" routerLink="/trabajadores">Gestión de Trabajadores</a>
+      <a class="dropdown-item" routerLink="/vendedores">Gestión de Vendedores</a>
+      <a class="dropdown-item" routerLink="/productos">Gestión de Productos</a>
+      <a class="dropdown-item" routerLink="/rutas">Gestión de Rutas</a>
+    </div>
+  </div>
+</nav>
+
+<nav class="my-2 my-md-0 mr-md-3">
+  <button class="p-2 text-dark" type="button" routerLink="/bodegView">Bodeguero</button>
+</nav>
+
+<nav class="my-2 my-md-0 mr-md-3">
+  <button class="p-2 text-dark" type="button" routerLink="/bodegView">Reportes</button>
+</nav>
+
+<a class="p-2 text-dark" href="#">Sign up</a>
 
 
 </div>
