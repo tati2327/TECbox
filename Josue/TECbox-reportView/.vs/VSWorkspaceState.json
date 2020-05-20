@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\components",
+    "\\src\\app\\components\\reports",
+    "\\src\\app\\components\\reports\\tables",
+    "\\src\\app\\components\\reports\\tables\\ship-table",
+    "\\src\\app\\components\\reports\\tables\\track-table",
+    "\\src\\app\\services",
+    "\\src\\environments"
+  ],
+  "SelectedNode": "\\src\\app\\components\\reports\\tables\\track-table\\track-table.component.html",
+  "PreviewInSolutionExplorer": false
+}
