@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FiltersComponent } from '../../shopping-cart/filters/filters.component';
 
 @Component({
   selector: 'app-sales-view',
@@ -7,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
   
 })
 export class SalesViewComponent implements OnInit {
+
+  getTextBoxVal(filter1,filter2){
+    console.log(filter1.value + " " +filter2.value)
+  }
+
 
   constructor() { }
 

@@ -8,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class TrackingViewComponent implements OnInit {
 
   constructor() { }
+  
+  getTextBoxVal(item){
+    alert(item.value)
+  }
 
   ngOnInit(): void {
   }

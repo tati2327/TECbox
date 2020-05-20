@@ -1,21 +1,40 @@
 <div class="container">
 
 
-    <div class="row">
+    <div class="row" >
         <div class="col-xs-12 col-md-8">  
             <h2>Shipped Products Report</h2>
         </div>
-        <div class="col-xs-6 col-md-4">
-            <h4>Here goes the filter</h4>
+    </div>
+    <div class="row top-buffer input-group date mb-3 mr-3">
+        <div id="filterDate2">
+            <div class="mr-3" data-date-format="dd.mm.yyyy">
+                <label >From </label>
+                <input #filter1 type="text" class="form-control" class="datepicker" placeholder="dd.mm.yyyy">
+                <div class="input-group-addon">
+                    <span class="glyphicon glyphicon-th"></span>
+                </div>
+            </div>
+        </div>
+        <div id="filterDate1">
+            <div  data-date-format="dd.mm.yyyy">
+                <label>To </label>
+                <input #filter2 type="text" class="form-control" class="datepicker" placeholder="dd.mm.yyyy">
+                <div class="input-group-addon">
+                    <span class="glyphicon glyphicon-th"></span>
+                </div>               
+            </div>    
+        </div>
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary btn-sm" type="button" id="search" (click)="getTextBoxVal(filter1,filter2)">Search</button>
         </div>
     </div>
+    
+    
     <div class="row">
         <div class="col">
             <app-ship-table></app-ship-table>
         </div>
     </div>
-    <div class="row">
-        <div class="col">
-        </div>
-    </div>
+    
 </div>
