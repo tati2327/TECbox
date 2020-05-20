@@ -12,4 +12,16 @@ export class ProductosComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  ingresar(){
+
+  }
+
+  modificar(){
+
+  }
+
+  eliminar(){
+
+  }
+
 }

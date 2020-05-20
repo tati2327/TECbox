@@ -12,4 +12,16 @@ export class PaquetesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  ingresar(){
+
+  }
+
+  modificar(){
+
+  }
+
+  eliminar(){
+
+  }
+
 }

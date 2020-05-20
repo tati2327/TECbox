@@ -5,11 +5,22 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './roles.component.html',
   styleUrls: ['./roles.component.css']
 })
+
 export class RolesComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ingresar(name, descrip){
+    console.log(name.value+descrip.value);
   }
 
+  modificar(){
+
+  }
+
+  eliminar(){
+
+  }
+
+  ngOnInit(): void {
+
+  }
 }

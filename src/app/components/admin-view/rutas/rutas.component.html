@@ -1,12 +1,12 @@
 <h3>Gestión de Rutas</h3>
 <form>
     <div class="form-group">
-      <label for="exampleInputEmail1" >Nombre de la ruta</label>
-      <input type="text" class="form-control col-md-4">
+      <label for="nameRoute" >Nombre de la ruta</label>
+      <input type="text" class="form-control col-md-4" #nameRoute>
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1">Desripción del Rol</label>
-      <textarea class="form-control col-md-5" id="exampleFormControlTextarea1" rows="3" placeholder="Ej: Buenos Aires-Liberia-Alajuelita"></textarea>
+      <label for="districts">Distritos: </label>
+      <textarea class="form-control col-md-5" #districts rows="3" placeholder="Ej: Buenos Aires-Liberia-Alajuelita"></textarea>
       <small class="form-text text-muted">Separe cada distrito con un guión.</small>
     </div>
     <button type="button" class="btn btn-primary btn-color btn-bg-color btn-sm col-xs-2 btn-primary-spacing"  btn-sm> Ingresar</button>

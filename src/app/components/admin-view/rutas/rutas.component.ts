@@ -12,4 +12,16 @@ export class RutasComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  ingresar(){
+
+  }
+
+  modificar(){
+
+  }
+
+  eliminar(){
+
+  }
+
 }

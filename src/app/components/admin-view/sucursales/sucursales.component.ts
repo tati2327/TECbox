@@ -12,4 +12,16 @@ export class SucursalesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  ingresar(){
+
+  }
+
+  modificar(){
+
+  }
+
+  eliminar(){
+
+  }
+
 }

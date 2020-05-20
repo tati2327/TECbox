@@ -12,4 +12,16 @@ export class VendedoresComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  ingresar(){
+
+  }
+
+  modificar(){
+
+  }
+
+  eliminar(){
+
+  }
+
 }

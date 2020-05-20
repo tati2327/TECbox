@@ -1,15 +1,15 @@
 <h3>Gestión de Roles</h3>
-<form>
+<form> 
     <div class="form-group">
-      <label for="exampleInputEmail1">Nombre del Rol</label>
-      <input type="text" class="form-control col-md-5">
+      <label for="nameRol">Nombre del Rol</label>
+      <input #nameRol type="text" class="form-control col-md-5">
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1">Desripción del Rol</label>
-      <textarea class="form-control col-md-6" id="exampleFormControlTextarea1" rows="3"></textarea>
-      <small class="form-text text-muted">Breve descripción acerca del rol.</small>
+      <label for="descripRol">Desripción del Rol</label>
+      <input #descripRol type="text" class="form-control col-md-6">
+      <small class="form-text">Breve descripción acerca del rol.</small>
     </div>
-    <button type="button" class="btn btn-primary btn-color btn-bg-color btn-sm col-xs-2 btn-primary-spacing"  btn-sm> Ingresar</button>
+    <button type="button" (click)="ingresar(nameRol, descripRol)" class="btn btn-primary btn-color btn-bg-color btn-sm col-xs-2 btn-primary-spacing"  btn-sm> Ingresar</button>
     <button type="button" class="btn btn-primary btn-color btn-bg-color btn-sm col-xs-2 btn-primary-spacing"  btn-sm> Modificar</button>
     <button type="button" class="btn btn-primary btn-color btn-bg-color btn-sm col-xs-2 btn-primary-spacing" btn-sm> Eliminar</button>
 

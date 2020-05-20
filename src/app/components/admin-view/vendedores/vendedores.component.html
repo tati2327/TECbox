@@ -1,9 +1,10 @@
 <h3>Gestión de Vendedores</h3>
 <form>
     <div class="form-group">
-      <label for="exampleInputEmail1">Nombre del Vendedor</label>
-      <input type="text" class="form-control">
+      <label for="nameSeller">Nombre del Vendedor</label>
+      <input type="text" class="form-control" #nameSeller>
     </div>
+
     <div class="form-group">
         <div class="row">
             <legend class="col-form-label col-sm-3 pt-0">Tipo de cédula</legend>
@@ -23,10 +24,12 @@
             </div>
         </div>
     </div>
+
     <div class="form-group">
-        <label for="exampleInputPassword1">Número de cédula</label>
-        <input type="text" class="form-control">
+        <label for="cedula">Número de cédula</label>
+        <input type="text" class="form-control" #cedula>
     </div>
+
     <button type="button" class="btn btn-primary btn-color btn-bg-color btn-sm col-xs-2 btn-primary-spacing"  btn-sm> Ingresar</button>
     <button type="button" class="btn btn-primary btn-color btn-bg-color btn-sm col-xs-2 btn-primary-spacing"  btn-sm> Modificar</button>
     <button type="button" class="btn btn-primary btn-color btn-bg-color btn-sm col-xs-2 btn-primary-spacing" btn-sm> Eliminar</button>
