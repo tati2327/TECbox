@@ -5,11 +5,29 @@
         <div class="col-xs-12 col-md-8"> 
             <h2>Sales Report</h2>
         </div>
-        <div class="col-xs-6 col-md-4">
-            <h4>Here goes the filter</h4>
+    </div>
+    <div class="row top-buffer">
+        <div id="filterDate2">
+            <div class="input-group date" data-date-format="dd.mm.yyyy">
+                <label>From </label>
+                <input type="text" class="form-control" class="datepicker" placeholder="dd.mm.yyyy">
+                <div class="input-group-addon">
+                    <span class="glyphicon glyphicon-th"></span>
+                </div>
+            </div>
+        </div>
+        <div id="filterDate1">
+            <div class="input-group date" data-date-format="dd.mm.yyyy">
+                <label>To </label>
+                <input type="text" class="form-control" class="datepicker" placeholder="dd.mm.yyyy">
+                <div class="input-group-addon">
+                    <span class="glyphicon glyphicon-th"></span>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="row">
+       
+    <div class="row top-buffer  ">
         <div class="col">
            <app-tables></app-tables>
         </div>
