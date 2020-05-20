@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         tv1 = (EditText) findViewById(R.id.editText1);
         tv2 =(EditText)findViewById(R.id.passwordbut);
 
-        validateUserName();
+        //validateUserName();
 
         loginBut.setOnClickListener(new View.OnClickListener() {
             @Override

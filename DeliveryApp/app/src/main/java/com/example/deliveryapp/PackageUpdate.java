@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.RadioButton;
@@ -13,40 +14,52 @@ import android.widget.Toast;
 public class PackageUpdate extends AppCompatActivity {
 
     String packageState;
+    RadioGroup radioGroup;
     RadioButton r1;
     RadioButton r2;
     RadioButton r3;
+    RadioButton buttonSelected;
+    Button confirm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_package_update);
 
-        RadioButton r1=(RadioButton) findViewById(R.id.radioButton1);
-        RadioButton r2=(RadioButton) findViewById(R.id.radioButton2);
-        RadioButton r3=(RadioButton) findViewById(R.id.radioButton3);
+        radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
+        r1 = (RadioButton) findViewById(R.id.radioButton1);
+        r2 = (RadioButton) findViewById(R.id.radioButton2);
+        r3 = (RadioButton) findViewById(R.id.radioButton3);
+        confirm = (Button) findViewById((R.id.confirmbut));
+
+        confirm.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                validation();
+
+            }
+        });
+
 
     }
-    public void onClick(View view){
-        if(view.getId()==R.id.confirmbut){
-            validar();
+
+
+    public void validation() {
+        //get checked RadioButton(). Return -1 if there is no radiobutton selected.
+        int isSelected = radioGroup.getCheckedRadioButtonId();
+        buttonSelected =(RadioButton) findViewById(isSelected);
+
+        if (isSelected == -1) {
+            Toast.makeText(PackageUpdate.this, "You have not selected any option", Toast.LENGTH_LONG).show();
+            return;
+        } else {
+            Toast.makeText(getBaseContext(),buttonSelected.getText(),Toast.LENGTH_SHORT).show();
+
         }
+
+
     }
-    public void validar(){
-        String cad="Seleccionado: \n";
 
-        if(r1.isChecked()==true){
-            packageState="Entregado al cliente";
-            cad +="Entregado al cliente\n";
 
-        }if(r2.isChecked()==true){
-            packageState="Entrega fallida";
-            cad +="Entrega fallida\n";
-
-        }if(r3.isChecked()==true){
-            packageState="Devuelto a la sucursal";
-            cad +="Devuelto a la sucursal\n";
-        }
-        Toast.makeText(getApplicationContext(),cad,Toast.LENGTH_SHORT).show();
-    }
 }
