@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import{TrackDataService} from 'src/app/services/track-data.service';
 import { TrackData } from 'src/app/models/track-data';
+import * as jsPDF from 'jspdf';
 
 
 @Component({
@@ -11,6 +12,12 @@ import { TrackData } from 'src/app/models/track-data';
 export class TrackTableComponent implements OnInit {
 
   trackDataList: TrackData[]=[]
+
+  public downloadPDF(){
+    const doc= new jsPDF(); 
+    doc.fromHTML(document.getElementById('conntent'), 10,10);
+    doc.save('table.pdf');
+  }
 
   constructor(private trackDataService: TrackDataService) { }
 

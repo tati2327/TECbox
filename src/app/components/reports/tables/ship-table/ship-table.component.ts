@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import{ShipDataService} from 'src/app/services/ship-data.service';
 import { ShipData } from 'src/app/models/ship-data';
+import * as jsPDF from 'jspdf';
 
 @Component({
   selector: 'app-ship-table',
@@ -10,6 +11,12 @@ import { ShipData } from 'src/app/models/ship-data';
 export class ShipTableComponent implements OnInit {
 
   shipDataList: ShipData[]=[]
+  
+  public downloadPDF(){
+    const doc= new jsPDF(); 
+    doc.fromHTML(document.getElementById('conntent'), 10,10);
+    doc.save('table.pdf');
+  }
 
   constructor(private shipDataService: ShipDataService) { }
 

@@ -8,7 +8,7 @@ import { TrackData } from '../models/track-data';
 export class TrackDataService {
 
   trackData =[
-    new TrackData(1,3214,"San Isidro","entregado"),
+    new TrackData(1, 321 ,"San Isidro","entregado"),
 
   ]
 

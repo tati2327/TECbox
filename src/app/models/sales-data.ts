@@ -1,7 +1,7 @@
 export class SalesData {
     number: number;
     product: string;
-    date: number;
+    date: string;
 
     constructor(id,product, date){
         this.number=id

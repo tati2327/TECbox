@@ -8,7 +8,7 @@ import {ShipData} from 'src/app/models/ship-data'
 export class ShipDataService {
   
   shipData =[
-    new ShipData(1,3512,"Juanito Mora",21/78/69),
+    new ShipData(1,3512,"Juanito Mora",'21/78/69'),
 
   ]
 

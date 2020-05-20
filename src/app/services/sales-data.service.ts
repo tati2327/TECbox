@@ -7,7 +7,7 @@ import{SalesData} from 'src/app/models/sales-data'
 export class SalesDataService {
 
   salesData =[
-    new SalesData(1,'pan',21/78/69),
+    new SalesData(1,'pan','21/78/69'),
 
   ]
 

@@ -22,7 +22,7 @@ import { ShippedViewComponent } from './components/reports/shipped-view/shipped-
 import { TablesComponent } from './components/reports/tables/tables.component';
 import { TrackTableComponent } from './components/reports/tables/track-table/track-table.component';
 import { ShipTableComponent } from './components/reports/tables/ship-table/ship-table.component';
-import { SalesTableComponent } from './reports/sales-view/sales-table/sales-table.component';
+
 
 
 
@@ -47,7 +47,7 @@ import { SalesTableComponent } from './reports/sales-view/sales-table/sales-tabl
     TablesComponent,
     TrackTableComponent,
     ShipTableComponent,
-    SalesTableComponent,
+ 
   
 
   ],

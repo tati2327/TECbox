@@ -2,7 +2,7 @@ export class ShipData {
     number:number;
     pack:number;
     deliveryMan:string;
-    date:number;
+    date:string;
 
     constructor(number,pack,deliveryMan,date){
         this.number=number
