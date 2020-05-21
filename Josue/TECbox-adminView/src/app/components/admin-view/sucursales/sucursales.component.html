@@ -1,0 +1,39 @@
+<h3>Gestión de Sucursales</h3>
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="nameSucursal">Nombre de la Sucursal</label>
+      <input type="text" class="form-control" #nameSucursal>
+    </div>
+    <div class="form-group col-md-3">
+      <label for="telephone">Teléfono</label>
+      <input type="tel" class="form-control" #telephone>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="encargado">Encargado</label>
+    <textarea type="text" class="form-control col-md-3" #encargado ></textarea>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="province">Provincia</label>
+      <input type="text" class="form-control" #province>
+    </div>
+    <div class="form-group col-md-3">
+      <label for="canton">Cantón</label>
+      <input type="text" class="form-control" #canton>
+    </div>
+    <div class="form-group col-md-3">
+      <label for="district">Distrito</label>
+      <input type="text" class="form-control" #district>
+    </div>
+    <div class="form-group col-md-5">
+      <label for="senas">Otras señas</label>
+      <input type="text" class="form-control" #senas>
+    </div>
+  </div>
+  <button type="button" (click)="ingresar(nameSucursal, telephone, encargado, province,canton, district,senas)" class="btn btn-primary btn-color btn-bg-color btn-sm col-xs-2 btn-primary-spacing" btn-sm> Ingresar</button>
+  <button type="button" (click)="modificar(nameSucursal, telephone, encargado, province,canton, district,senas)" class="btn btn-primary btn-color btn-bg-color btn-sm col-xs-2 btn-primary-spacing" btn-sm> Modificar</button>
+  <button type="button" (click)="borrar()" class="btn btn-primary btn-color btn-bg-color btn-sm col-xs-2 btn-primary-spacing" btn-sm> Eliminar</button>
+
+</form>

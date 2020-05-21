@@ -1,0 +1,24 @@
+<h3>Gestión de Vendedores</h3>
+<form>
+  <div class="form-group">
+    <label for="nameSeller">Nombre del Vendedor</label>
+    <input type="text" class="form-control" #nameSeller>
+  </div>
+
+  <div class="form-group">
+    <div class="form-group">
+      <label for="nameSeller">¿Cédula física o jurídica?</label>
+      <input type="text" class="form-control-2" #tipo>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="cedula">Número de cédula</label>
+    <input type="text" class="form-control" #cedula>
+  </div>
+
+  <button type="button" (click)="ingresar(nameSeller,cedula,tipo)" class="btn btn-primary btn-color btn-bg-color btn-sm col-xs-2 btn-primary-spacing" btn-sm> Ingresar</button>
+  <button type="button" (click)="modificar(nameSeller,cedula,tipo)" class="btn btn-primary btn-color btn-bg-color btn-sm col-xs-2 btn-primary-spacing" btn-sm> Modificar</button>
+  <button type="button" (click)="borrar()" class="btn btn-primary btn-color btn-bg-color btn-sm col-xs-2 btn-primary-spacing" btn-sm> Eliminar</button>
+
+</form>

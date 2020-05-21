@@ -11,6 +11,6 @@
     "\\src\\app\\services",
     "\\src\\environments"
   ],
-  "SelectedNode": "\\src\\app\\components\\reports\\tables\\track-table\\track-table.component.html",
+  "SelectedNode": "\\src\\app\\components\\reports\\tables\\tables.component.html",
   "PreviewInSolutionExplorer": false
 }

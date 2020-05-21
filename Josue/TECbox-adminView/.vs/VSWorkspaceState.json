@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\components",
+    "\\src\\app\\components\\admin-view",
+    "\\src\\app\\components\\admin-view\\trabajadores",
+    "\\src\\app\\components\\admin-view\\vendedores",
+    "\\src\\app\\components\\bodeg-view\\  rastreo-paquetes",
+    "\\src\\app\\components\\shopping-cart",
+    "\\src\\app\\services"
+  ],
+  "SelectedNode": "\\src\\app\\components\\admin-view\\trabajadores\\trabajadores.component.ts",
+  "PreviewInSolutionExplorer": false
+}
