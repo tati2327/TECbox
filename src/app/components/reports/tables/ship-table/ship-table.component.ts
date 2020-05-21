@@ -21,7 +21,9 @@ export class ShipTableComponent implements OnInit {
   constructor(private shipDataService: ShipDataService) { }
 
   ngOnInit(): void {
-    this.shipDataList=this.shipDataService.getShipData()
-  }
+    this.shipDataService.getShipData().subscribe((shipData) => {
+      this.shipDataList = shipData;
+    })
+ }
 
 }

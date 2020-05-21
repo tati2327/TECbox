@@ -23,7 +23,9 @@ export class TablesComponent implements OnInit {
   constructor(private salesDataService: SalesDataService) { }
 
   ngOnInit(): void {
-    this.salesDataList=this.salesDataService.getSalesData()
+    this.salesDataService.getSalesData().subscribe((SalesData) => {
+      this.salesDataList = SalesData;
+    })
   }
 
 }

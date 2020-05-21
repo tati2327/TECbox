@@ -1,20 +1,24 @@
 import { Injectable } from '@angular/core';
-import{SalesData} from 'src/app/models/sales-data'
+import { HttpClient } from '@angular/common/http';
+import { SalesData } from 'src/app/models/sales-data'
+
+const apiUrl = 'http://localhost:3000/reportes_mas_vendidos';
+
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SalesDataService {
 
-  salesData =[
-    new SalesData(1,'pan','21/78/69'),
+  /*salesData =[
+    new SalesData(1,'pan',21/78/69),
 
-  ]
+  ]*/
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  getSalesData(): SalesData[]{
-    //Populate salesData from an API and return and Observable
-    return this.salesData
+  getSalesData(): Observable<SalesData[]> {
+    return this.http.get<SalesData[]>(apiUrl);
   }
 }

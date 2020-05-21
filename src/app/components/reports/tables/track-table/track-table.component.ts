@@ -22,6 +22,8 @@ export class TrackTableComponent implements OnInit {
   constructor(private trackDataService: TrackDataService) { }
 
   ngOnInit(): void {
-    this.trackDataList=this.trackDataService.getTrackData()
+    this.trackDataService.getTrackData().subscribe((shipData) => {
+      this.trackDataList = shipData;
+    })
   }
 }

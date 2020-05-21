@@ -1,5 +1,10 @@
 import { Injectable } from '@angular/core';
-import {ShipData} from 'src/app/models/ship-data'
+import { HttpClient } from '@angular/common/http';
+import { ShipData } from 'src/app/models/ship-data'
+
+const apiUrl = 'http://localhost:3000/reportes_entregados';
+
+import { Observable } from 'rxjs';
 
 
 @Injectable({
@@ -7,14 +12,13 @@ import {ShipData} from 'src/app/models/ship-data'
 })
 export class ShipDataService {
   
-  shipData =[
-    new ShipData(1,3512,"Juanito Mora",'21/78/69'),
+  /*shipData =[
+    new ShipData(1,3512,"Juanito Mora",21/78/69),
 
-  ]
+  ]*/
+  constructor(private http: HttpClient) { }
 
-  constructor() { }
-  getShipData(): ShipData[]{
-    //Populate salesData from an API and return and Observable
-    return this.shipData 
+  getShipData(): Observable<ShipData[]> {
+    return this.http.get<ShipData[]>(apiUrl);
   }
 }
