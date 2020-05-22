@@ -1,0 +1,29 @@
+<div *ngIf="cartItems.length === 0" class="alert alert-info">Your cart is empty.</div>
+
+<ul *ngIf="cartItems.length > 0" class="list-group">
+  <li class="list-group-item" *ngFor="let item of cartItems">
+    <app-cart-item [cartItem] =  "item"></app-cart-item>
+  </li>
+
+  <li class="list-group-item active">
+    <strong>Total</strong> {{ cartTotal |  currency: '&#8353;'}}
+  </li>
+
+  <form>
+    <div class="form-group">
+      <label for="discount">
+        Cupón de descuento <!-- SI METE ALGO DESCUENTO SI NO NADA-->
+      </label>
+      <input type="number" id="discount" class="form-control">
+    </div>
+
+    <strong>
+      <button class="btn btn-primary btn-block btn-sm"
+        [routerLink]="'/checkout'">Check out</button>
+    </strong>
+  </form>
+</ul>
+
+
+
+<!-- BOTON PARA COMPRAR Y MANDARLE AL API QUE HAY PEDIDIO-->

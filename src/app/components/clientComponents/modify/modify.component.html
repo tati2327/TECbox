@@ -1,0 +1,76 @@
+<div class="row">
+
+  <div class="col">
+
+    <div class="card">
+        <div class="card-header">
+          <h3>Modify account.</h3>
+        </div>
+
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <label for="targeted">Targeted field:</label>
+                <select id="targeted" class="change">
+                  <option value="nombre">Full name</option>
+                  <option value="cedula">ID</option>
+                  <option value="correo">Mail</option>
+                  <option value="casillero">Locker</option>
+                  <option value="celular">Cellphone</option>
+                  <option value="telefono">Telephone</option>
+                  <option value="provincia">Provincia</option>
+                  <option value="canton">Cantón</option>
+                  <option value="distrito">Distrito</option>
+                  <option value="señas">Dirección exacta</option>
+                  <option value="usuario">Username</option>
+                  <option value="password">Password</option>
+                </select>
+            </div>
+
+            <div class="form-group ">
+              <label for="newEntry">New entry:</label>
+              <input type="string" id="newEntry" class="form-control" >
+            </div>
+
+            <button class="btn btn-primary btn-block btn-sm" (click)="targetedChange()" type="button">Done</button>
+
+            <!-- buscar accion sobre boton | aca REQUEST BUSCA HISTORIAL DEL PAQUETE-->
+          </form>
+        </div>
+      </div>
+  </div>
+
+
+  <div class="col-md-8" >
+    <div class="card" >
+        <div class="card-header">
+          <h3>New data preview.</h3>
+        </div>
+
+        <div class="card-body">
+            <div *ngIf="selected === ''" class="alert alert-info">
+              No new data.
+            </div>
+
+            <ul *ngIf="selected !== ''" class="list-group">
+                <label for="name">Full name</label>
+                <label for="id">ID</label>
+                <label for="mail">Mail</label>
+                <label for="locker">Locker</label>
+                <label for="cel">Cellphone</label>
+                <label for="tel">Telephone</label>
+                <label for="Provincia">Provincia</label>
+                <label for="canton">Canton</label>
+                <label for="distrito">Distrito</label>
+                <label for="dir">Dirección exacta</label>
+                <label for="name">Username</label>
+                <label for="password">Password</label>
+            </ul>
+
+        </div>
+      </div>
+  </div>
+</div>
+
+
+

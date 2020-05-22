@@ -1,0 +1,62 @@
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+  <h5 class="my-0 mr-md-auto font-weight-normal">
+    <app-header></app-header>
+  </h5>
+  <nav class="my-2 my-md-0 mr-md-3 navBar">
+
+    <div class="row">
+    <div class="dropdown extra">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Client
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <button class="dropdown-item" type="button" routerLink="/management">Management</button>
+        <button class="dropdown-item" type="button" routerLink="/track">Find My Package!</button>
+        <button class="dropdown-item" type="button" routerLink="/shop">Shop</button>
+      </div>
+    </div>
+
+      <div class="dropdown extra">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Administración
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" routerLink="/roles">Gestión de Roles</a>
+          <a class="dropdown-item" routerLink="/sucursales">Gestión de Sucursales</a>
+          <a class="dropdown-item" routerLink="/trabajadores">Gestión de Trabajadores</a>
+          <a class="dropdown-item" routerLink="/vendedores">Gestión de Vendedores</a>
+          <a class="dropdown-item" routerLink="/productos">Gestión de Productos</a>
+          <a class="dropdown-item" routerLink="/rutas">Gestión de Rutas</a>
+        </div>
+      </div>
+
+      <div class="dropdown extra">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Bodega
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <button class="dropdown-item" type="button" routerLink="/paquetes">Package</button>
+          <button class="dropdown-item" type="button" routerLink="/rastreo-paquetes">Tracking</button>
+        </div>
+      </div>
+
+    <div class="dropdown extra">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Reports
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <button class="dropdown-item" type="button" routerLink="/sales">Sales</button>
+        <button class="dropdown-item" type="button" routerLink="/tracking">Tracking</button>
+        <button class="dropdown-item" type="button" routerLink="/shipped">Products shipped</button>
+      </div>
+    </div>
+  </div>
+  </nav>
+
+
+
+
+  <a class="btn btn-primary btn-register" [routerLink]="'/register'">Sign up</a>
+  <a class="btn btn-outline-secondary btn-register" [routerLink]="'/login'">Login</a>
+
+</div>

@@ -3,6 +3,10 @@
   font-size: small;
 }
 
+.placed-order {
+  width: 400px;
+}
+
 .filters {
   font-size: small;
 }
@@ -17,7 +21,13 @@
   margin-top: 10px;
 }
 
+.extra{
+  margin: 10px 20px 10px 20px;
+}
 
+.navBar{
+  height: 50px;
+}
 .input-su{ /** input-sign up **/
   margin: 1px 20px 10px 10px;
   background-color: #fff;
@@ -45,7 +55,8 @@
 }
 
 .btn-register {
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
 .list-group-item:first-child{
@@ -60,4 +71,18 @@
 
 .product-btn {
   font-size: smaller;
+}
+
+.change {
+  margin: 20px 20px 20px 20px;
+}
+
+.delete-btn{
+  background-color: darkred;
+  border-color:darkred;
+  margin-bottom: 50px;
+}
+.management-btn {
+  margin-top: 50px;
+  font-size: large;
 }

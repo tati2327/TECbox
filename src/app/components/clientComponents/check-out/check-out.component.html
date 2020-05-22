@@ -1,0 +1,49 @@
+<!--
+  Compra de productos: por cada compra se almacenará entre otros datos:
+producto(s) que se vende(n), cantidad, precio unitario por producto y precio
+total, finalmente se podrá ver el precio de la venta total, descuento e impuesto.
+Una vez finalizada la venta existirá un proceso automático de creación de
+paquete y asignación del paquete al cliente.
+-->
+
+<div class="card">
+
+  <div class="card-header">
+    <strong>Receipt</strong></div>
+
+  <div class="card-body">
+    <div *ngIf="checkoutItems.length === 0" class="alert alert-info">No cart items.</div>
+
+    <ul *ngIf="checkoutItems.length > 0" class="list-group">
+      <li class="list-group-item" *ngFor="let item of checkoutItems">
+        <div class="cart-item">
+          <span>{{item.productName }}</span> x
+            <span>{{item.qty }}</span>:
+              <span>{{item.price | currency: '&#8353;'}}</span>
+              <strong>{{ (item.qty * item.price) | currency: '&#8353;' }}</strong>
+        </div>
+      </li>
+
+      <li class="list-group-item active">
+        <strong>Subtotal   </strong> {{ cartTotal |  currency: '&#8353;'}}
+      </li>
+
+      <li class="list-group-item active">
+        <strong>+ Impuesto   </strong>{{ cartTotal*(tax/100) | currency: '&#8353;' }}
+      </li>
+
+      <li class="list-group-item active">
+        <strong> - Descuento   </strong>{{ cartTotal*(discount/100) | currency: '&#8353;' }}
+      </li>
+
+      <li class="list-group-item active">
+        <strong>Total </strong>{{ checkoutTotal |  currency: '&#8353;'}}
+      </li>
+
+      <div>
+        <button class="btn btn-secondary btn-block btn-sm" [routerLink]="'/order-placed'">Order</button>
+      </div>
+    </ul>
+  </div>
+</div>
+
