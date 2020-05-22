@@ -1,0 +1,44 @@
+<div class="row pho">
+  <div class="col">
+    <div class="card">
+        <div class="card-header">
+          <h3>Track your package!</h3>
+        </div>
+
+        <div class="card-body">
+          <form>
+            <div class="form-group col-md-10">
+              <label for="inputEmail4">Tacking ID del paquete</label>
+              <input #tid type="text" class="form-control">
+            </div>
+
+
+            <button type="button" (click)="populateReports(tid)" class="btn btn-primary btn-block btn-sm" >Go</button>
+            <!-- buscar accion sobre boton | aca REQUEST BUSCA HISTORIAL DEL PAQUETE-->
+          </form>
+        </div>
+    </div>
+  </div>
+    <div class="col-md-8" >
+      <div class="card" >
+          <div class="card-header">
+            <h3>Reports</h3>
+          </div>
+
+          <div class="card-body">
+            <div *ngIf="reportList.id === 0" class="alert alert-info">
+                Your order has been processed.</div>
+
+              <ul *ngIf="reportList.id !== 0" class="list-group">
+                <li class="list-group-item">
+                  <label class="reportLog">{{reportList.id}}</label>
+                  <label class="reportLog">{{reportList.description}}</label>
+                  <label class="reportLog">{{reportList.log}}</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+
+

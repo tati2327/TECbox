@@ -1,0 +1,95 @@
+<!-- Gestión de Clientes/creación del casillero: El sistema debe permitir
+ingresar, modificar y eliminar clientes, de los cuales se guarda nombre completo,
+número de cédula (Física o Jurídica), correo electrónico, casillero, Teléfono
+celular y de la casa, dirección de entrega (Provincia, cantón, distrito y otras
+señas), usuario y password. -->
+
+<div class="row">
+  <div class="col-md-6 offset-md-3">
+
+   
+    <div class="card register">
+      <div class="card-header">
+        <h3>Modify your account</h3>
+      </div>
+
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <label for="name">ID</label>
+            <input type="string" #idd class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="name">Full name</label>
+            <input type="string" #name class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="id">Cedula</label>
+            <input type="string" #id class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="mail">Mail</label>
+            <input type="string" #mail class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="locker">Locker</label>
+            <input type="string" #locker class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="cel">Cellphone</label>
+            <input type="string" #cel class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="tel">Telephone</label>
+            <input type="string" #tel class="form-control">
+          </div>
+
+          <div class="form-group form-inline">
+
+            <div class="form-group ">
+              <label for="porvincia">Provincia</label>
+              <input type="string" #procivincia class="form-control inline-input" size="9">
+            </div>
+
+            <div class="form-group ">
+              <label for="canton">Canton</label>
+              <input type="string" #canton class="form-control inline-input" size="9">
+            </div>
+
+            <div class="form-group ">
+              <label for="distrito">Distrito</label>
+              <input type="string" #distrito class="form-control inline-input" size="9">
+            </div>
+
+          </div>
+
+          <div class="form-group">
+            <label for="dir">Dirección exacta</label>
+            <input type="string" #dir class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="name">Username</label>
+            <input type="string" #username class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" #password class="form-control">
+          </div>
+
+
+          <button class="btn btn-primary btn-block btn-sm" (click)="modificar(idd,name,id,mail,locker,cel,tel,procivincia,canton,distrito,dir,username,password)" [routerLink]="'/shop'">Modify</button>
+          <!-- POST TO API TO SIGN UP CLIENT-->
+        </form>
+      </div>
+    </div>
+
+
+  </div>
+</div>

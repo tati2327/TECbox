@@ -1,0 +1,41 @@
+<div class="container">
+
+
+    <div class="row">
+        <div class="col-xs-12 col-md-8"> 
+            <h2>Sales Report</h2>
+        </div>
+    </div>
+    <div class="row top-buffer input-group date mb-3 mr-3">
+        <div id="filterDate2">
+            <div class="mr-3" data-date-format="dd.mm.yyyy">
+                <label >From </label>
+                <input type="text" class="form-control" class="datepicker" placeholder="dd.mm.yyyy" #filter1>
+                <div class="input-group-addon">
+                    <span class="glyphicon glyphicon-th"></span>
+                </div>
+            </div>
+        </div>
+        <div id="filterDate1">
+            <div  data-date-format="dd.mm.yyyy">
+                <label>To </label>
+                <input type="text" class="form-control" class="datepicker" placeholder="dd.mm.yyyy" #filter2>
+                <div class="input-group-addon">
+                    <span class="glyphicon glyphicon-th"></span>
+                </div>               
+            </div>    
+        </div>
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary btn-sm" type="button" id="search" (click)="getTextBoxVal(filter1,filter2)">Search</button>
+        </div>
+    </div>
+       
+    <div class="row top-buffer  ">
+        <div class="col">
+           <app-tables></app-tables>
+        </div>
+    </div>
+</div>
+        
+    
+          

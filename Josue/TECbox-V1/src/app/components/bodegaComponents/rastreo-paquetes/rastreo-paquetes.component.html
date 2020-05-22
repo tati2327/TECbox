@@ -1,0 +1,20 @@
+<h3>Gestión de Rasteo Paquetes</h3>
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Tacking ID del paquete</label>
+      <input #tid type="text" class="form-control">
+    </div>
+    <div class="form-colum">
+      <div class="form-group col-md-9">
+        <label for="inputEmail4">Estado del paquete</label>
+        <input #estado type="text" class="form-control">
+      </div>
+    </div>
+
+  </div>
+  <button type="button" (click)="ingresar(tid,estado)" class="btn btn-primary btn-color btn-bg-color btn-sm col-xs-2 btn-primary-spacing" btn-sm> Ingresar</button>
+  <button type="button" (click)="modificar(tid,estado)" class="btn btn-primary btn-color btn-bg-color btn-sm col-xs-2 btn-primary-spacing" btn-sm> Modificar</button>
+  <button type="button" (click)="borrar(tid)" class="btn btn-primary btn-color btn-bg-color btn-sm col-xs-2 btn-primary-spacing" btn-sm> Eliminar</button>
+
+</form>

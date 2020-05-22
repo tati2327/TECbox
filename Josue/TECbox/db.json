@@ -1,0 +1,197 @@
+{
+  "administracion_roles": [
+    {
+      "nombre": "hj",
+      "descripcion": "kj",
+      "id": 2
+    },
+    {
+      "nombre": "adf",
+      "descripcion": "rrq",
+      "id": 3
+    },
+    {
+      "nombre": "qwer",
+      "descripcion": "qwert",
+      "id": 4
+    },
+    {
+      "nombre": "adf",
+      "descripcion": "sf",
+      "id": 6
+    }
+  ],
+  "administracion_sucursales": [
+    {
+      "nombre": "4567",
+      "direccion": {
+        "provincia": "kjhk",
+        "canton": "lkhkjh",
+        "distrito": "khkljh",
+        "senas": "kjhklh"
+      },
+      "telefono": "567",
+      "encargado": "678hgjb",
+      "id": 2
+    }
+  ],
+  "administracion_trabajadores": [
+    {
+      "numero_cedula": "ww",
+      "nombre_completo": {
+        "nombre": "www",
+        "primer_apellido": "www",
+        "segundo_apellido": "ww"
+      },
+      "fecha_nacimiento": "ww",
+      "sucursal": "ww",
+      "salario_mes": "ww",
+      "salario_hora": null,
+      "id": 2
+    }
+  ],
+  "administracion_vendedores": [
+    {
+      "nombre": "wer",
+      "cedula": "rt",
+      "tipo": "ert",
+      "id": 3
+    }
+  ],
+  "administracion_productos": [
+    {
+      "nombre": "www",
+      "codigo_barras": "www",
+      "vendedor": "ww",
+      "productos": "tyuiww",
+      "precio": "ww",
+      "impuesto": "ww",
+      "descuento": "ww",
+      "id": 2
+    },
+    {
+      "nombre": "erty",
+      "codigo_barras": "rty",
+      "vendedor": "rtyu",
+      "productos": "tyui",
+      "precio": "yui",
+      "impuesto": "yui",
+      "descuento": "yui",
+      "id": 3
+    }
+  ],
+  "administracion_rutas": [
+    {
+      "codigo": "rty",
+      "ruta": "rty",
+      "id": 3
+    }
+  ],
+  "bodeguero_paquetes": [
+    {
+      "cliente": "Jos",
+      "descripcion": "Adios",
+      "fecha_estimada": "El viernes",
+      "id": 1
+    }
+  ],
+  "bodeguero_rastreo": [
+    {
+      "trackingID": "1",
+      "estado": "Delivered",
+      "id": 1
+    },
+    {
+      "trackingID": "ww",
+      "estado": "ww",
+      "id": 2
+    }
+  ],
+  "cliente_cliente": [
+    {
+      "nombre": "4567",
+      "cedula": "5678",
+      "correo": "ghj",
+      "casillero": "ghj",
+      "telefono": {
+        "celular": "jkyui",
+        "casa": "yui"
+      },
+      "direccion": {
+        "provincia": "yui",
+        "canton": "yui",
+        "distrito": "yui",
+        "senas": "yuui"
+      },
+      "usuario": "yiu",
+      "password": "yuui",
+      "id": 1
+    }
+  ],
+  "cliente_productos": [
+    {
+      "id": "producto",
+      "cantidad": "cantidad",
+      "description": "aaassss",
+      "precio_total": "precio_total",
+      "descuento": "descuento",
+      "impuesto": "impuesto",
+      "image": "https://www.maestrosdelweb.com/images/2009/08/crayones_jpg.jpg",
+      "price": 3
+    }
+  ],
+  "cliente_rastreo": [
+    {
+      "id": 1,
+      "name": "name",
+      "description": "hola perro1",
+      "log": "situacion"
+    },
+    {
+      "id": 2,
+      "name": "nae",
+      "description": "hola perro2",
+      "log": "situacio"
+    }
+  ],
+  "reportes_mas_vendidos": [
+    {
+      "number": 4,
+      "product": "perro1",
+      "date": 2
+    }
+  ],
+  "reportes_entregados": [
+    {
+      "number": 3,
+      "pack": 4,
+      "deliveryMan": "fecha_entregado",
+      "date": 4
+    }
+  ],
+  "reportes_tracking": [
+    {
+      "number": 3,
+      "package": 4,
+      "route": "que",
+      "state": "sobo"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

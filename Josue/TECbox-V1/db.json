@@ -1,0 +1,213 @@
+{
+  "administracion_roles": [
+    {
+      "nombre": "hj",
+      "descripcion": "kj",
+      "id": 2
+    },
+    {
+      "nombre": "adf",
+      "descripcion": "rrq",
+      "id": 3
+    },
+    {
+      "nombre": "afafsadfsaf",
+      "descripcion": "wer",
+      "id": 4
+    },
+    {
+      "nombre": "h",
+      "descripcion": "kj",
+      "id": 5
+    },
+    {
+      "nombre": "adf",
+      "descripcion": "sf",
+      "id": 6
+    }
+  ],
+  "administracion_sucursales": [
+    {
+      "nombre": "Hormiga de Oro",
+      "direccion": {
+        "provincia": "Cartago",
+        "canton": "San Ra",
+        "distrito": "Oriental",
+        "senas": "derecha"
+      },
+      "telefono": "66662222",
+      "encargado": "Chito",
+      "id": 2
+    },
+    {
+      "nombre": "Hormiga de Oro",
+      "direccion": {
+        "provincia": "Cartago",
+        "canton": "San Ra",
+        "distrito": "Oriental",
+        "senas": "derecha"
+      },
+      "telefono": "66662222",
+      "encargado": "Chito",
+      "id": 3
+    }
+  ],
+  "administracion_trabajadores": [
+    {
+      "numero_cedula": "12345689",
+      "nombre_completo": {
+        "nombre": "Josue",
+        "primer_apellido": "Araya",
+        "segundo_apellido": "Garcia"
+      },
+      "fecha_nacimiento": "22 agosto",
+      "sucursal": "Cartago",
+      "salario_mes": "60000",
+      "salario_hora": 400,
+      "id": 2
+    }
+  ],
+  "administracion_vendedores": [
+    {
+      "nombre": "Maria",
+      "cedula": "1234567",
+      "tipo": "Juridica",
+      "id": 2
+    }
+  ],
+  "administracion_productos": [
+    {
+      "nombre": "Prueba 2",
+      "codigo_barras": "123",
+      "vendedor": "Josu",
+      "productos": "MAna",
+      "precio": "123",
+      "impuesto": "si",
+      "descuento": "si",
+      "id": 2
+    }
+  ],
+  "administracion_rutas": [
+    {
+      "codigo": "Hola",
+      "ruta": "San Carlos mi linda tierra",
+      "id": 2
+    }
+  ],
+  "bodeguero_paquetes": [
+    {
+      "cliente": "Jos",
+      "descripcion": "Adios",
+      "fecha_estimada": "El viernes",
+      "id": 1
+    },
+    {
+      "cliente": "Vale",
+      "descripcion": "Null",
+      "fecha_estimada": "22 11 2",
+      "id": 3
+    }
+  ],
+  "bodeguero_rastreo": [
+    {
+      "trackingID": "1",
+      "estado": "Delivered",
+      "id": 1
+    },
+    {
+      "trackingID": "2",
+      "estado": "Out",
+      "id": 2
+    }
+  ],
+  "cliente_cliente": [
+    {
+      "nombre": "nombre",
+      "cedula": "cedula",
+      "correo": "correo",
+      "casillero": "casillero",
+      "telefono": [
+        {
+          "celular": "celular",
+          "casa": "casa"
+        }
+      ],
+      "direccion": [
+        {
+          "provincia": "provincia",
+          "canton": "canton",
+          "distrito": "distrito",
+          "se�as": "se�as"
+        }
+      ],
+      "usuario": "usuario",
+      "password": "password"
+    }
+  ],
+  "cliente_productos": [
+    {
+      "id": "producto",
+      "cantidad": "cantidad",
+      "description": "aaassss",
+      "precio_total": "precio_total",
+      "descuento": "descuento",
+      "impuesto": "impuesto",
+      "image": "https://www.maestrosdelweb.com/images/2009/08/crayones_jpg.jpg",
+      "price": 3
+    }
+  ],
+  "cliente_rastreo": [
+    {
+      "id": 1,
+      "name": "name",
+      "description": "hola perro1",
+      "log": "situacion"
+    },
+    {
+      "id": 2,
+      "name": "nae",
+      "description": "hola perro2",
+      "log": "situacio"
+    }
+  ],
+  "reportes_mas_vendidos": [
+    {
+      "number": 4,
+      "product": "perro1",
+      "date": 2
+    }
+  ],
+  "reportes_entregados": [
+    {
+      "number": 3,
+      "pack": 4,
+      "deliveryMan": "fecha_entregado",
+      "date": 4
+    }
+  ],
+  "reportes_tracking": [
+    {
+      "number": 3,
+      "package": 4,
+      "route": "que",
+      "state": "sobo"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
