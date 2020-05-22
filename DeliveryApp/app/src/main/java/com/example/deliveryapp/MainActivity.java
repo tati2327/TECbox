@@ -5,18 +5,23 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  {
     EditText tv1;
     EditText tv2;
-    EditText pw;
+
     int indexValidation;
-    String list[]={"perro1","perro2"};
-    String PasswordList[]={"momoa","perra2"};
+    String list[]={"Juan Araya","Paco Robles"};
+    String PasswordList[]={"1234","1234"};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
         Button loginBut = (Button) findViewById(R.id.loginBut);
         tv1 = (EditText) findViewById(R.id.editText1);
         tv2 =(EditText)findViewById(R.id.passwordbut);
+
+
+
 
         //validateUserName();
 
@@ -79,4 +87,8 @@ public class MainActivity extends AppCompatActivity {
             return false;
         }
     }
+
 }
+
+
+
